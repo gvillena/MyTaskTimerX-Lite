@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="MyTaskTimerX">
+  <logicalClassDesignerModelMoniker Id="5d0b233f-6848-4417-87e9-ed57939fae03" />
+  <nestedChildShapes>
+    <classShape Id="e94d1d1a-7673-4229-9eba-728818298f3b" absoluteBounds="3.25, 0.875, 1.875, 2.148773089647293" hideQualifiedName="false" showFullSignature="true" increaseHeight="0.18800345897674561" customColor="181, 193, 223">
+      <classMoniker Id="41164379-8321-4215-a3c7-7007516740a3" LastKnownName="MyTaskManagerX" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="dee0f947-1e41-4a18-a8e8-e96d78e44492" absoluteBounds="3.2649999999999997, 1.3903356393178306, 1.8450000000000002, 0.52148435761531187" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="ec57d420-7dc5-4db1-b76b-e7812964173e" absoluteBounds="3.265, 1.9218199969331422, 1.8450000000000002, 1.0019530927141507" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ec8d1330-0db2-47c8-922d-f8d4b52618ad" absoluteBounds="5.625, 0.875, 1.5, 2.0234374503294625" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="40d92d92-70ba-430b-8b6c-fa2b9a8068e8" LastKnownName="MyTaskX" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="9ca99550-555c-4c77-abe6-abcc25d66fd7" absoluteBounds="5.64, 1.2650000000000001, 1.4700000000000002, 1.0019530927141507" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="259517cd-bbf9-43cf-a2f3-169dd191b26c" absoluteBounds="5.64, 2.2769530927141508, 1.4700000000000002, 0.52148435761531187" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c4d7960d-e492-4d4d-b543-263b324bc939" absoluteBounds="0.5, 0.875, 1.5, 2.5039061854283013" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="1595a33a-0fa3-4d9f-b9eb-47f4f2bb643e" LastKnownName="MyTimerManagerX" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="71c18808-5399-4f04-9a63-37ffb870fee4" absoluteBounds="0.515, 1.2650000000000001, 1.4700000000000002, 0.84179684768120444" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="2edd127b-49da-4640-b3fd-d5f26f60d972" absoluteBounds="0.515, 2.1167968476812042, 1.4700000000000002, 1.162109337747097" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <enumerationShape Id="580ce7fe-be45-4cb4-acf3-0a1878aa0158" absoluteBounds="0.5, 4.25, 1.5, 1.3317968476812041" hideQualifiedName="false" increaseHeight="0" customColor="161, 150, 103">
+      <enumerationMoniker Id="012b5a38-6d89-4472-adc5-f2016d8cc3be" LastKnownName="TimerStatus" />
+      <nestedChildShapes>
+        <LiteralElementListCompartment Id="e4ad6abe-e005-46be-8662-9077ff6bffe4" absoluteBounds="0.515, 4.6400000000000006, 1.4700000000000002, 0.84179684768120444" name="LiteralsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </enumerationShape>
+  </nestedChildShapes>
+</logicalClassDesignerDiagram>

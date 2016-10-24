@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AE3E5916-149D-4933-9F4C-8CDB1FDB4A87}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>MyTaskTimerX.My.MyApplication</StartupObject>
+    <RootNamespace>MyTaskTimerX</RootNamespace>
+    <AssemblyName>MyTaskTimerX</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>MyTaskTimerX.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>MyTaskTimerX.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.vb" />
+    <Compile Include="Enums\TaskTimerXPanel.vb" />
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomeUC.Designer.vb">
+      <DependentUpon>HomeUC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HomeUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ITaskTimerX.vb" />
+    <Compile Include="MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Panels\Home\IHomePanel.vb" />
+    <Compile Include="Panels\Tasks\AddTask.Designer.vb">
+      <DependentUpon>AddTask.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\Tasks\AddTask.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Tasks\TaskDetailPanel.Designer.vb">
+      <DependentUpon>TaskDetailPanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\Tasks\TaskDetailPanel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Tasks\TaskListPanel.Designer.vb">
+      <DependentUpon>TaskListPanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\Tasks\TaskListPanel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Tasks\TasksCompletedPanel.Designer.vb">
+      <DependentUpon>TasksCompletedPanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\Tasks\TasksCompletedPanel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Tasks\TasksSummary.Designer.vb">
+      <DependentUpon>TasksSummary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\Tasks\TasksSummary.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Tasks\TasksSummaryPanel.Designer.vb">
+      <DependentUpon>TasksSummaryPanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\Tasks\TasksSummaryPanel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SplashScreen.Designer.vb">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaskManagerX\ITaskManagerX.vb" />
+    <Compile Include="TaskManagerX\TaskManagerX.vb" />
+    <Compile Include="TaskManagerX\TaskX.vb" />
+    <Compile Include="Panels\Home\HomePanel.Designer.vb">
+      <DependentUpon>HomePanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\Home\HomePanel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Tasks\ITasksPanel.vb" />
+    <Compile Include="Panels\Tasks\TasksPanel.Designer.vb">
+      <DependentUpon>TasksPanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\Tasks\TasksPanel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Tasks\TaskInfoPanel.Designer.vb">
+      <DependentUpon>TaskInfoPanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\Tasks\TaskInfoPanel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Timer\TimerPanel.Designer.vb">
+      <DependentUpon>TimerPanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\Timer\TimerPanel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TimerManagerX\TaskTimerExpired.vb" />
+    <Compile Include="TimerForm\TimerForm.Designer.vb">
+      <DependentUpon>TimerForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TimerForm\TimerForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimerManagerX\TimerManagerX.vb" />
+    <Compile Include="UserManagerX\UserManagerX.vb" />
+    <Compile Include="UserManagerX\UserX.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeUC.resx">
+      <DependentUpon>HomeUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Home\HomePanel.resx">
+      <DependentUpon>HomePanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Tasks\AddTask.resx">
+      <DependentUpon>AddTask.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Tasks\TaskDetailPanel.resx">
+      <DependentUpon>TaskDetailPanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Tasks\TaskListPanel.resx">
+      <DependentUpon>TaskListPanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Tasks\TasksCompletedPanel.resx">
+      <DependentUpon>TasksCompletedPanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Tasks\TasksPanel.resx">
+      <DependentUpon>TasksPanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Tasks\TaskInfoPanel.resx">
+      <DependentUpon>TaskInfoPanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Tasks\TasksSummaryPanel.resx">
+      <DependentUpon>TasksSummaryPanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Timer\TimerPanel.resx">
+      <DependentUpon>TimerPanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimerForm\TimerForm.resx">
+      <DependentUpon>TimerForm.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

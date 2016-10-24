@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="MyTaskTimerXPresentation">
+  <logicalClassDesignerModelMoniker Id="ed058f39-9032-477c-b60f-a58cbd298b24" />
+  <nestedChildShapes>
+    <interfaceShape Id="a181aa55-6b30-48ba-adc1-cd54bca6d954" absoluteBounds="3, 1, 1.5, 2.5039061854283013" hideQualifiedName="false" increaseHeight="0" customColor="207, 223, 191">
+      <interfaceMoniker Id="312ea6bd-f7c7-450e-86c3-6ae36b9a7e42" LastKnownName="ITaskTimerX" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="9bba5d0d-3d80-431a-a571-ac69ff3f0bef" absoluteBounds="3.0149999999999997, 1.3900000000000001, 1.4700000000000002, 1.6425780728459358" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="7655353a-081d-4a06-b49d-4a0054faf741" absoluteBounds="3.015, 3.0425780728459357, 1.4700000000000002, 0.36132811258236552" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </interfaceShape>
+  </nestedChildShapes>
+</logicalClassDesignerDiagram>

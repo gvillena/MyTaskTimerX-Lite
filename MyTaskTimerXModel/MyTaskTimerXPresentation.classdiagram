@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="ed058f39-9032-477c-b60f-a58cbd298b24" name="MyTaskTimerXPresentation" linkedPackageId="1936b94c-cb9f-4f4b-b53c-ef38163bcfcf" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="cccbad95-e517-41b9-8eb5-dd8316985a46">
+      <profileInstance Id="81f1ece4-3145-4590-b293-2b276bf3fc91" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="152bd7f9-9756-4b5b-bfb7-7e7c2ad1b878">
+      <profileInstance Id="43fb004d-e7d1-4994-9b76-250b4f45e5f4" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="312ea6bd-f7c7-450e-86c3-6ae36b9a7e42" name="ITaskTimerX" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="417689f2-e99b-4aaf-86c9-1ad71fa2deaa" />
+        <ownedAttributes>
+          <property Id="43ce151b-24db-4a0f-b91c-05c09e1d4a85" name="CreateQuickTask" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b6e99223-0479-4d90-ad0e-7aaa5142acd8" />
+          </property>
+          <property Id="3e08dc50-93f7-42f8-9dc4-0ed65b0bc417" name="HideTaskList" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="42557814-904a-490f-9633-f39b5fa32c83" />
+          </property>
+          <property Id="15758435-129d-420d-9895-af93ce516af7" name="TimerStart" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1930700e-5fad-4565-8cc6-21054dbfe41d" />
+          </property>
+          <property Id="cc71b795-b79d-4a96-ab4b-2a781fa0b15f" name="TimerPause" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="270d8453-aa99-4c50-a624-8cf025eb26db" />
+          </property>
+          <property Id="a216ddc3-4605-4410-9dd2-381c70181119" name="TimerRestart" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="82f3ed0c-5113-44cb-917d-f3d15791d7f0" />
+          </property>
+          <property Id="b91eae20-2ef7-499b-9d21-7ed83ec8db39" name="ShowTaskList" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="da9cfe5b-df33-48c0-8d04-d7e4d6bb7de2" />
+          </property>
+          <property Id="83d4e2a1-873a-4707-9407-73a0214a4734" name="TaskTimeExpired" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5e24a765-128c-4633-8b18-067d2fb774b4" />
+          </property>
+          <property Id="4a493132-838e-4465-b52a-26fb0df493c2" name="Tick" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8a27a64a-fff5-45e3-bd2c-dd8ab0ed2b07" />
+          </property>
+          <property Id="b56c447b-53b4-49a8-b585-ebb636060c96" name="CreateNewTask" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="28e34a3f-e782-49f1-8398-b19008aa15ec" />
+          </property>
+        </ownedAttributes>
+        <ownedOperations>
+          <operation Id="bea70f52-d6c3-4656-889c-04a0c2d77249" name="Operation1" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="de68dd36-ee1a-44b2-9c97-88448b52c507" />
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="1936b94c-cb9f-4f4b-b53c-ef38163bcfcf" name="MyTaskTimerXModel">
+    <elementDefinition Id="79552cd0-1a09-4d3f-bf01-76e3aeff62ca" />
+  </package>
+</logicalClassDesignerModel>

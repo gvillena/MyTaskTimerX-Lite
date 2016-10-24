@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="5d0b233f-6848-4417-87e9-ed57939fae03" name="MyTaskTimerX" linkedPackageId="fb2ebce3-b725-4a03-a828-2d8714d29b12" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="040567b8-edaf-43f2-81c3-8a1c33e7eb2f">
+      <profileInstance Id="1e0c386f-a3df-4f56-bb57-82be69c8211f" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="a26117c6-a22e-4d4b-b382-725a64b98e78">
+      <profileInstance Id="beea9269-7300-40df-a8a0-e46988180396" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="41164379-8321-4215-a3c7-7007516740a3" name="MyTaskManagerX" visibility="Protected" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="b705c733-bcc4-4965-b965-81cf1181706a" name="type" profile="StandardProfileL2">
+            <elementDefinition Id="8ae65f34-4831-4c2f-a09e-e17c700e0556" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="522b93d6-3b94-492e-9a30-76548b12c8e7" />
+        <ownedAttributesInternal>
+          <property Id="a3f587b9-014b-4165-b703-c61df5cc2ef9" name="Instance" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9e283541-214d-4ed9-a825-c9c2a5fd9143" />
+          </property>
+          <property Id="fde363a0-e0bf-4b6c-9aea-3aa212ea8261" name="TaskHashTable" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="823e53ea-f04f-4b07-bf4c-1e7be261409e" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="f66fc199-1e26-43eb-a08a-39a08908e1ff" name="AddTask" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="688f770d-7121-4c0e-b16d-ff187082956a" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="8e836dcd-7efb-4fd4-a751-ebbc18963a12" direction="Return">
+                  <elementDefinition Id="5196348a-0cd0-485d-a7c7-d6684fbb8d38" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f9bc76d7-773f-4b81-933f-f9a2a9cc77af" LastKnownName="MyTaskX" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="014aa2d9-954c-41a7-b627-ac367d074bd7" name="Name" direction="In">
+                  <elementDefinition Id="28a112be-af18-45da-a4b7-4ebc71450f66" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="0b6c1da0-0bbc-4bae-8e0b-69c67bd63d3f" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="9b7c8918-e89b-447d-ade2-d3c761941fd5" name="TaskTime" direction="In">
+                  <elementDefinition Id="fb4bc78a-02e2-43bd-9c0b-51064fe10ff7" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="86418a3c-e056-480b-99b1-252b3ac51196" name="DeleteTask" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8b4dd895-9e64-4f97-9a12-639ad41c4f90" />
+          </operation>
+          <operation Id="3e962dbc-1dfb-4050-b833-06a867d7eb61" name="GetTask" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e09cac54-6837-48a7-9a93-53c37738d859" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f58d3acc-dc56-430b-a53d-20eb4666bd88" direction="Return">
+                  <elementDefinition Id="5e527498-508a-4702-8bfd-ae0c270c41f1" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="7b2a08a6-3cfd-4c36-beab-2f8c850d9f56" LastKnownName="MyTaskX" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="831bc819-d750-4145-90e2-971daa090b56" name="TaskId" direction="In">
+                  <elementDefinition Id="3358c872-83fb-40a2-bfe5-9f98e99ebef3" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="46bc580a-b363-40b9-9e8d-9a9d8812a3ea" LastKnownName="Integer" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="5925a2dc-b65d-4412-8966-80ccfb8ebb4a" name="GetAllTask" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="806de88d-ca15-4c5b-ba9f-cc13ab250b55" />
+          </operation>
+          <operation Id="888adb85-9886-49c4-886e-e17ebe47e32b" name="AddTask" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="37f5d771-12a8-4c59-9742-c47608c679da" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="40d92d92-70ba-430b-8b6c-fa2b9a8068e8" name="MyTaskX" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="58cd240a-a768-4772-aed0-abafa6f3366d" />
+        <ownedAttributesInternal>
+          <property Id="a49ac94a-473c-41a0-ae45-d453c414bfb2" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e8755d7b-d649-443c-b979-f8a75c2bce19" />
+          </property>
+          <property Id="db856eae-a640-4557-a55f-3f7dcb286b9f" name="StartTime" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="bf6a2dce-aff6-4a60-9299-1df90269b2e4" />
+          </property>
+          <property Id="866930dd-4c78-4dcd-b509-b9392481996e" name="EndTime" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="811057c0-03b5-4ddb-a98b-e931a656e450" />
+          </property>
+          <property Id="4d5b3c43-7f53-4bd2-ba78-f4c41ed535b6" name="EstimatedTime" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b8a28335-2065-4da7-ab44-e06273e080f7" />
+          </property>
+          <property Id="a64b8968-e152-49ff-bf87-756b88a8b192" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6484bcc8-2ff2-4006-8b66-fec87f7f267a" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="9bc55ded-a3a8-4d3e-a6f3-72a5b8fc6458" name="ToArray" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b30f075f-444c-4efd-888c-19543f7e8445" />
+          </operation>
+          <operation Id="8de7ad6a-0495-4426-9090-d2179ae037cc" name="GetEstimatedTimeString" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="cf2df47c-f811-4af3-9f29-93cf55e3e200" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="7b2a08a6-3cfd-4c36-beab-2f8c850d9f56" name="MyTaskX" isAbstract="false" isLeaf="false" cachedFullName="MyTaskTimerXModel::MyTaskX">
+        <elementDefinition Id="58cd240a-a768-4772-aed0-abafa6f3366d" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="46bc580a-b363-40b9-9e8d-9a9d8812a3ea" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f9bc76d7-773f-4b81-933f-f9a2a9cc77af" name="MyTaskX" isAbstract="false" isLeaf="false" cachedFullName="MyTaskTimerXModel::MyTaskX">
+        <elementDefinition Id="58cd240a-a768-4772-aed0-abafa6f3366d" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="0b6c1da0-0bbc-4bae-8e0b-69c67bd63d3f" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="1595a33a-0fa3-4d9f-b9eb-47f4f2bb643e" name="MyTimerManagerX" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e17ab8d4-d5f5-4953-9866-f50e8444fc3c" />
+        <ownedAttributesInternal>
+          <property Id="50a711f5-7fa8-4308-9429-093fa79298a1" name="Status" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6e5ef57a-cb47-435a-bb7c-cacf6d12eab7" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="945eebd4-36f0-44b3-bac9-7f7e3e712ffe" LastKnownName="TimerStatus" />
+            </type_NamedElement>
+            <defaultValue>
+              <literalString Id="a9925980-7d4a-49ba-a793-050c01b0d219" name="DefaultValue" value="Empty">
+                <elementDefinition Id="b055452d-4d1e-4886-8b0e-b718cb8bc6d5" />
+              </literalString>
+            </defaultValue>
+          </property>
+          <property Id="0c868eb6-d049-4fb2-80a5-963e7ed2f42d" name="LoadedTaskId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1e6c58e2-6b93-4de9-a7a3-cd426a00c463" />
+          </property>
+          <property Id="23009215-4af8-4fc0-8226-9143aba71dfd" name="Instance" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="576a69f7-8c79-492f-91a5-f7333dc30385" />
+          </property>
+          <property Id="77068dfe-5515-453a-a29a-0ce2d3fd753c" name="TaskHashTable" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0435cfbc-9b25-4ca1-8440-ae844b0bcbd1" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="cadc6588-994e-4bd2-bb31-3d6ddcec47e8" name="GetRunningTask" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3160d211-6112-4787-a77c-2026fc1ff71a" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="e09f0f38-a326-4dde-8fbe-931232727cb7" direction="Return">
+                  <elementDefinition Id="c4bd59fd-2608-481a-9ea3-8983166f4337" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="36febce4-803a-424f-8555-c0f654872762" LastKnownName="MyTaskX" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="18173d92-8244-4104-8f5f-40d8f79b4c4a" name="StartTask" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="962931e7-eccf-4a31-98f9-5e96705c104f" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="bd9690ca-f31b-4d2d-9f0a-275e11f1ac6a" direction="Return">
+                  <elementDefinition Id="ba505114-4f73-4216-b181-563084352b71" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="91d0d1fb-534a-4caf-ae88-2b6a95973a95" LastKnownName="Boolean" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="3e3406cf-3dea-494f-9232-d9e4295e2530" name="LoadTask" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="aeabf13f-484a-4fdc-99dd-e4dd2b1b49c0" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="7cda7b57-55bd-47d5-b778-f7a1d121d464" name="Task" direction="In">
+                  <elementDefinition Id="e5238122-8432-4a6c-b179-7dc096fff9e6" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="7b2a08a6-3cfd-4c36-beab-2f8c850d9f56" LastKnownName="MyTaskX" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="20beb8c7-8b84-42cd-b864-7f53b435b9c5" direction="Return">
+                  <elementDefinition Id="c1f36f8f-5542-4a09-887c-6b83a4788754" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="997c9f6a-7f97-4d33-8377-e2dc1172fa1b" LastKnownName="Boolean" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="07342fe2-131e-45eb-87c4-3bb928d9c676" name="PauseTask" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c40ed95b-3094-480e-846a-0a0133f43ddd" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="52ac8404-c471-42d9-85cf-feb38b88652e" direction="Return">
+                  <elementDefinition Id="fc5bc741-b9ed-400f-8c40-abd1e698183f" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a891c0d1-9fd1-46cd-b86e-41a24e5ebe13" LastKnownName="Boolean" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="8fa9b4a5-97fb-4a23-9c71-c36308a9ad2a" name="RestartTask" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9b9f072b-d6f4-44dd-b6fd-faf5b23d34bd" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="17f7caa8-3137-4094-9cd4-7156f6afb7ad" direction="Return">
+                  <elementDefinition Id="4659aef5-97f9-4da9-afac-2a9be0bfe96c" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="956409dd-2f5f-4695-a273-5157fe00a230" LastKnownName="Boolean" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="906e54c2-281c-4edd-90f7-1f7ecc07736b" name="UnloadTask" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="84595320-472a-4cca-b3b3-73fe93f77e17" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="4665394e-bbc8-4ae2-8b72-cb192fd98f25" direction="Return">
+                  <elementDefinition Id="2ae7be0b-b330-469d-8c00-596b6ce93b43" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f5ac8088-c95b-49f1-932e-3bd46c879c4d" LastKnownName="Boolean" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <enumeration Id="012b5a38-6d89-4472-adc5-f2016d8cc3be" name="TimerStatus" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1776acfa-27ff-4e2c-84c4-109579728376" />
+        <ownedLiterals>
+          <enumerationLiteral Id="40ace5a6-94d2-44c2-b594-2ec4c330f6be" name="Idle">
+            <elementDefinition Id="8258ff5f-83e2-411e-80b4-ec5a25e29a1c" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="4282bd8b-5171-4b10-bd97-ce97507c3f61" name="Running">
+            <elementDefinition Id="d4ffc6c6-e570-4afa-be68-9c6bab09fbe4" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="3aa51809-a6e1-4094-bc47-6e88f91e5c14" name="Paused">
+            <elementDefinition Id="ddc6acc3-219f-4fcf-8d84-a1bb2fbe98f2" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="ca771ddb-ca13-4064-a3fa-742bbb76ef6c" name="Empty">
+            <elementDefinition Id="79ee8fdc-e2e8-4937-bfe8-81ac43082eb1" />
+          </enumerationLiteral>
+        </ownedLiterals>
+      </enumeration>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="945eebd4-36f0-44b3-bac9-7f7e3e712ffe" name="TimerStatus" isAbstract="false" isLeaf="false" cachedFullName="MyTaskTimerXModel::TimerStatus">
+        <elementDefinition Id="1776acfa-27ff-4e2c-84c4-109579728376" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="997c9f6a-7f97-4d33-8377-e2dc1172fa1b" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="a891c0d1-9fd1-46cd-b86e-41a24e5ebe13" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="956409dd-2f5f-4695-a273-5157fe00a230" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="91d0d1fb-534a-4caf-ae88-2b6a95973a95" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f5ac8088-c95b-49f1-932e-3bd46c879c4d" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="36febce4-803a-424f-8555-c0f654872762" name="MyTaskX" isAbstract="false" isLeaf="false" cachedFullName="MyTaskTimerXModel::MyTaskX">
+        <elementDefinition Id="58cd240a-a768-4772-aed0-abafa6f3366d" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="fb2ebce3-b725-4a03-a828-2d8714d29b12" name="MyTaskTimerXModel">
+    <elementDefinition Id="79552cd0-1a09-4d3f-bf01-76e3aeff62ca" />
+  </package>
+</logicalClassDesignerModel>
